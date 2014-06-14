@@ -1,6 +1,6 @@
 body{
     background-color: #343434;
-    
+}   
  	#menu {
     width: 550px;
     height: 35px;
@@ -23,5 +23,3 @@ body{
 	display: inline; 
 	padding: 20px; 
     }
-}
-
