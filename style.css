@@ -17,7 +17,7 @@ body{
 	}
 
  	#menu {
-    width: 60%;
+    width: 50%;
     padding: 21px;
     font-family: HelveticaNeueLTStd-ThCn;
     font-weight: bold;
@@ -25,10 +25,10 @@ body{
     text-transform: uppercase;
     font-size: 20px;
     position: relative;
-    overflow: hidden;
+    overflow: inherit;
     top: -91px;
  	height: auto;
-    /*left: 25%;*/
+    right: 10%;
     float: right;
 	}
 
