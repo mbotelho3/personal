@@ -3,7 +3,7 @@ body{
 }   
 
 	#header{
-		width: 110%;
+		width: 100%;
 		height: 65px;
 		background-color: black;
 		position: relative;
@@ -28,7 +28,7 @@ body{
     overflow: inherit;
     top: -91px;
  	height: auto;
-    right: 10%;
+    right: 5px;
     float: right;
 	}
 
