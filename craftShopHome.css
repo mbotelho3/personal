@@ -14,21 +14,15 @@
 	height: 500px;
 }
 
-
-.g {
+table {
 	position: relative;
 	padding: 0.25em;
-	top: 200px;
-	overflow: hidden;
-	list-style-type: none; 
-	}
-	.g container {
-		margin-left: 10em;
-		width: 50%;
-		display: inline-block;
-    	position: relative;
+	top: 50px;
+	left: 50%;
+	margin: auto;
+}
 		
-	}
+	
 	.g img {
 		margin: 10px;
 		background-color: #ffffff;
@@ -54,6 +48,9 @@
 	    top: 50%;
 	    left: 0;
 	    right: 0;
+	    text-transform: uppercase;
+	    font-family: HelveticaNeueLTStd-ThCn;
+    	font-weight: bold;
 	    vertical-align: center;
 	    text-align: center;
 	    color: black;
@@ -61,7 +58,7 @@
 	    line-height: 1.1em;
 	}
 	a:hover .caption {
-    display: block;
+    	display: block;
 	}​
 
 
@@ -109,9 +106,6 @@
 	.container:hover title{
 		display: block;
 
-
-
-*/
 	}
 	.container:nth-child(odd) {
 		clear: left;
@@ -162,4 +156,4 @@
 		}
 	}
 
-
+*/
