@@ -14,16 +14,114 @@
 	height: 500px;
 }
 
-table {
+.grid{
 	position: relative;
-	padding: 0.25em;
-	top: 50px;
-	left: 50%;
-	margin: auto;
+	top: 100px;
+	height: auto;
+	width: 86%; /*i want this to be the same as box.width*/
 }
-		
+
+.grid .container{
+	position: relative;
+	background-color: #ffffff;
+	left: 100px;
+	width: 300px;
+	height: 228px;
+	top: 30px;
+	overflow: hidden;
+	float: left;
 	
-	.g img {
+	margin: 40px;
+}
+
+.grid img{
+	max-width: 300px;
+	max-height: 228px;	
+}
+
+.grid img:hover{
+	opacity: .7;
+}
+	
+.grid .caption{
+	z-index: 100;
+	display: none;
+	position: absolute;
+	background-color: black;
+	top: 50%;
+	left: 0;
+	right: 0;
+	text-transform: uppercase;
+	font-family: HelveticaNeueLTStd-ThCn;
+    font-weight: bold;
+	vertical-align: center;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	line-height: 1.1em;
+}
+
+a:hover .caption {
+    display: block;
+}​
+	
+
+.grid:nth-child(odd) {
+		clear: left;
+	}
+
+	@media screen and (min-width: 40em) {
+		.grid {
+	    	width: 33.3333333333333333%; 
+	  	}
+	  	.grid:nth-child(3n+1) {
+	  		clear: left;
+	  	}
+	  	.grid:nth-child(odd) {
+			clear: none;
+		}
+	}
+	@media screen and (min-width: 55em) {
+		.grid {
+	    	width: 25%; 
+	  	}
+	  	.grid:nth-child(4n+1) {
+	  		clear: left;
+	  	}
+	  	.grid:nth-child(3n+1) {
+			clear: none;
+		}
+	}
+	@media screen and (min-width: 72em) {
+		.grid {
+	    	width: 20%; 
+	  	}
+	  	.grid:nth-child(5n+1) {
+	  		clear: left;
+	  	}
+	  	.grid:nth-child(4n+1) {
+			clear: none;
+		}
+	}
+	@media screen and (min-width: 90em) {
+		.grid {
+	    	width: 16.666666666%; 
+	  	}
+	  	.grid:nth-child(6n+1) {
+	  		clear: left;
+	  	}
+	  	.grid:nth-child(5n+1) {
+			clear: none;
+		}
+	}
+
+
+
+
+/*
+
+
+.g img {
 		margin: 10px;
 		background-color: #ffffff;
 		overflow:hidden;
@@ -38,8 +136,11 @@ table {
 
 
 	.g a {
-	    display: inline-block;
-	    position: relative;
+	  float:left;
+	  width : 50%;
+	  padding : 40%;
+	  max-width : 150px;
+	  min-width : 50px;
 	}
 	.caption {
 		z-index: 100;
@@ -61,9 +162,6 @@ table {
     	display: block;
 	}​
 
-
-
-/*
 .g {
 	position: relative;
 	padding: 0.25em;
