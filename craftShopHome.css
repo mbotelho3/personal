@@ -14,11 +14,14 @@
 	height: 500px;
 }
 
-.grid{
+.grid {
 	position: relative;
+	left: 100px;
+	vertical-align: center;
 	top: 100px;
-	height: auto;
-	width: 86%; /*i want this to be the same as box.width*/
+	height: 100%;
+	width: 90%; /*i want this to be the same as box.width*/
+
 }
 
 .grid .container{
@@ -30,13 +33,13 @@
 	top: 30px;
 	overflow: hidden;
 	float: left;
-	
+
 	margin: 40px;
 }
 
 .grid img{
 	max-width: 300px;
-	max-height: 228px;	
+	max-height: 228px;
 }
 
 .grid img:hover{
@@ -66,192 +69,4 @@ a:hover .caption {
 }​
 	
 
-.grid:nth-child(odd) {
-		clear: left;
-	}
 
-	@media screen and (min-width: 40em) {
-		.grid {
-	    	width: 33.3333333333333333%; 
-	  	}
-	  	.grid:nth-child(3n+1) {
-	  		clear: left;
-	  	}
-	  	.grid:nth-child(odd) {
-			clear: none;
-		}
-	}
-	@media screen and (min-width: 55em) {
-		.grid {
-	    	width: 25%; 
-	  	}
-	  	.grid:nth-child(4n+1) {
-	  		clear: left;
-	  	}
-	  	.grid:nth-child(3n+1) {
-			clear: none;
-		}
-	}
-	@media screen and (min-width: 72em) {
-		.grid {
-	    	width: 20%; 
-	  	}
-	  	.grid:nth-child(5n+1) {
-	  		clear: left;
-	  	}
-	  	.grid:nth-child(4n+1) {
-			clear: none;
-		}
-	}
-	@media screen and (min-width: 90em) {
-		.grid {
-	    	width: 16.666666666%; 
-	  	}
-	  	.grid:nth-child(6n+1) {
-	  		clear: left;
-	  	}
-	  	.grid:nth-child(5n+1) {
-			clear: none;
-		}
-	}
-
-
-
-
-/*
-
-
-.g img {
-		margin: 10px;
-		background-color: #ffffff;
-		overflow:hidden;
-		position: relative;
-		width: 280px;
-		height: 200px;
-		display: block;
-	}
-	.g img:hover{
-		opacity: .7;
-	}
-
-
-	.g a {
-	  float:left;
-	  width : 50%;
-	  padding : 40%;
-	  max-width : 150px;
-	  min-width : 50px;
-	}
-	.caption {
-		z-index: 100;
-	    display: none;
-	    position: absolute;
-	    top: 50%;
-	    left: 0;
-	    right: 0;
-	    text-transform: uppercase;
-	    font-family: HelveticaNeueLTStd-ThCn;
-    	font-weight: bold;
-	    vertical-align: center;
-	    text-align: center;
-	    color: black;
-	    font-weight: bold;
-	    line-height: 1.1em;
-	}
-	a:hover .caption {
-    	display: block;
-	}​
-
-.g {
-	position: relative;
-	padding: 0.25em;
-	top: 200px;
-	overflow: hidden;
-	list-style-type: none; 
-	}
-	.container {
-		float: left;
-		margin-left: 10em;
-		width: 50%;
-		display: inline-block;
-    	position: relative;
-		
-	}
-	.g img {
-		margin: 10px;
-		background-color: #ffffff;
-		overflow:hidden;
-		position: relative;
-		width: 280px;
-		height: 200px;
-		display: block;
-	}
-	.g img:hover{
-		opacity: .5;		
-	}
-	.g title{
-		z-index: 100;
-		position:relative;
-	    width: 100%;
-	    color: #fff;
-	    font-size: 10px;
-	    font-weight: bold;
-	    background-color: rgba(0, 0, 0, 0.5);
-	    text-align: center;
-	    display: hidden;
-	    vertical-align: middle;
-	}
-	.container:hover title{
-		display: block;
-
-	}
-	.container:nth-child(odd) {
-		clear: left;
-	}
-
-	@media screen and (min-width: 40em) {
-		.container {
-	    	width: 33.3333333333333333%; 
-	  	}
-	  	.container:nth-child(3n+1) {
-	  		clear: left;
-	  	}
-	  	.container:nth-child(odd) {
-			clear: none;
-		}
-	}
-	@media screen and (min-width: 55em) {
-		.container {
-	    	width: 25%; 
-	  	}
-	  	.container:nth-child(4n+1) {
-	  		clear: left;
-	  	}
-	  	.container:nth-child(3n+1) {
-			clear: none;
-		}
-	}
-	@media screen and (min-width: 72em) {
-		.container {
-	    	width: 20%; 
-	  	}
-	  	.container:nth-child(5n+1) {
-	  		clear: left;
-	  	}
-	  	.container:nth-child(4n+1) {
-			clear: none;
-		}
-	}
-	@media screen and (min-width: 90em) {
-		.container {
-	    	width: 16.666666666%; 
-	  	}
-	  	.container:nth-child(6n+1) {
-	  		clear: left;
-	  	}
-	  	.container:nth-child(5n+1) {
-			clear: none;
-		}
-	}
-
-*/
