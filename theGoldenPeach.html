@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="basicLayout.css">
+<!-- <script src="expMenu.js"></script> -->
+<title>Golden Peach</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link rel="shortcut icon" href="webIcon.ico">
+</head>
+
+<body>
+	
+<div id= "logo" class="logo">
+	<a href="theGoldenPeach.html"><img src ="theGoldenPeach2.png"></a>
+</div>
+
+<div id= "menu">
+	<a href="#">Coolers</a>
+	<a href="#">Drink ware</a>
+    <a href="">Decor</a>
+	<a href="#">Paddles</a>
+	<a href="#">Stickers</a>
+	<a href="#">About Us</a>
+</div>
+
+<div id="main"
+	class="main">
+	<ul class="box">
+
+	</ul>
+</div>
+
+<div id="coolerMenu" class="coolerMenu">
+	<h1>Filter</h1>
+
+	<div id="op" class="op">
+		<ul class='submenu'><h1>Cost</h1>
+			<li>Under $30</li>
+			<li>Under $50</li>
+			<li>Under $70</li>
+			<li>Above $70</li>
+		</ul>
+	</div>
+
+	<div id="op" class="op">
+		<ul class='submenu' id= ><h1>Size</h1>
+			<li>Small</li>
+			<li>Medium</li>
+			<li>Large</li>
+		</ul>
+	</div>
+
+	<div id="op" class="op">
+		<ul class='submenu'><h1>Location</h1>
+			<li>Sides</li>
+			<li>Top</li>
+			<li>Front + Back</li>
+			<li>Lids + Bottoms</li>
+		</ul>
+	</div>
+
+	<div id="op" class="op">
+		<ul class='submenu'><h1>Categories</h1>
+			<li>Disney</li>
+			<li>Alcohol Brands</li>
+			<li>Lilly</li>
+			<li>Simple</li>
+			<li>Intrecate</li>
+			<li>Miscellaneous</li>
+		<ul>
+	</div>
+
+<script>
+	$(document).ready(function(){
+		$('.op').find('.submenu':has('li'))
+			.click(function(event){
+				$(this).children('li').toggle('Medium');
+				.children('li').hide();
+	};
+
+// 	$(document).ready(function (){
+//     $('.submenu').click(function(){
+//         $('.submenu li').toggle();
+//     });
+// });
+</script>
+
+
+
+</div>
+
+
+</body>
+</html>
