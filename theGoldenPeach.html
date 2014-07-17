@@ -64,7 +64,7 @@
 	<div id="op" class="op">
 		<ul class='submenu'>
 			<h1>Categories</h1>
-			<li>Disney</li>
+			<li class>Disney</li>
 			<li>Alcohol Brands</li>
 			<li>Lilly</li>
 			<li>Simple</li>
@@ -75,16 +75,15 @@
 
 <script>
 	function prepareList() {
-		$('.op').find('.submenu:has(h1)')
+		$('.op').find('.submenu:has(li)')
 			.click(function(event){
-				alert(this);
-				alert(event.target);
-				if(this==event.target){
+				if(this.childNodes[0]==event.target){
 					$(this).children('li').toggle();
 				}
 				return false;
 		})
-	}
+		 .children('ul').hide();
+	};
 
 	$(document).ready(function(){
 		prepareList()
