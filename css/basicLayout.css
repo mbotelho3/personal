@@ -1,8 +1,8 @@
-.logo{
-	width:20%;
-	position: relative;
-	top: 10px;
+.head{
+	position: absolute;
+	top:30px;
 }
+
 
 .logo img {
 	max-width: 300px;
@@ -11,16 +11,15 @@
 
 
 #menu {
-	width: auto;
 	font-family: HelveticaNeueLTStd-BdCn;
 	font-weight: bold;
 	text-align: right;
 	text-transform: uppercase;
 	font-size: 20px;
-	position: absolute;
+	position: relative;
 	overflow: inherit;
-	top: 135px;
 	height: auto;
+	top: -20px;
 	left: 300px;
 	float: right;
 	}
@@ -39,7 +38,7 @@
 .box{
 	position: relative;
 	background-color: #b7b7b7;
-	top:-12px;
+	top:200px;
 
 	height: 500px;
 }
@@ -48,7 +47,7 @@
 	background-color: #b7b7b7;
 	border-radius: 10px;
 	position: relative;
-	top: 100px;
+	top: 300px;
 	width: 200px;
 	height: auto;
 	left: 20px;
@@ -113,5 +112,57 @@
 
 .coolerMenu li:hover{
 	background-color: #d8d8d8;
+}
+
+
+.grid {
+	position: absolute;
+	background-color: red;
+	width: 80%;
+	left: 300px;
+	top: 810px;
 
 }
+
+.grid .container{
+	position: relative;
+	background-color: #ffffff;
+	width: 210px;
+	height: 158px;
+	top: 30px;
+	overflow: hidden;
+	float: left;
+	margin: 40px;
+}
+
+.grid img{
+	float: left;
+	max-width: 210px;
+	max-height: 160px;
+}
+
+.grid img:hover{
+	opacity: .7;
+}
+	
+.grid .caption{
+	z-index: 100;
+	display: none;
+	position: absolute;
+	background-color: black;
+	top: 50%;
+	left: 0;
+	right: 0;
+	text-transform: uppercase;
+	font-family: HelveticaNeueLTStd-ThCn;
+    font-weight: bold;
+	vertical-align: center;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	line-height: 1.1em;
+}
+
+a:hover .caption {
+    display: block;
+}​

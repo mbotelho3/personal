@@ -2,20 +2,21 @@
 <html>
 
 <head>
-<meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="basicLayout.css">
-<!-- <script src="expMenu.js"></script> -->
+<meta charset="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/basicLayout.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <title>Golden Peach</title>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
 <link rel="shortcut icon" href="webIcon.ico">
 </head>
 
 <body>
-	
+
+<div class='head'>
 <div id= "logo" class="logo">
 	<a href="theGoldenPeach.html"><img src ="theGoldenPeach2.png"></a>
 </div>
-
 <div id= "menu">
 	<a href="#">Coolers</a>
 	<a href="#">Drink ware</a>
@@ -24,13 +25,16 @@
 	<a href="#">Stickers</a>
 	<a href="#">About Us</a>
 </div>
+</div>
+
 
 <div id="main"
 	class="main">
 	<ul class="box">
-
+		<!-- picture goes here -->
 	</ul>
 </div>
+
 
 <div id="coolerMenu" class="coolerMenu">
 	<h1>Filter</h1>
@@ -73,33 +77,72 @@
 		</ul>
 	</div>
 
-<script>
-	function prepareList() {
-		$('.op').find('.submenu:has(li)')
-			.click(function(event){
-				if(this.childNodes[0]==event.target){
-					$(this).children('li').toggle();
-				}
-				return false;
-		})
-		 .children('ul').hide();
-	};
+	<script>
+		function prepareList() {
+			$('.op').find('.submenu:has(li)')
+				.click(function(event){
+					if(this.childNodes[0]==event.target){
+						$(this).children('li').toggle();
+					}
+					return false;
+			})
+			 .children('ul').hide();
+		};
 
-	$(document).ready(function(){
-		prepareList()
-	});
+		$(document).ready(function(){
+			prepareList()
+		});
+	</script>
+</div>
 
-// 	$(document).ready(function (){
-//     $('.op').click(function(){
-//         $('.op li').toggle();
-//     });
-// });
-</script>
 
+<div id="grid" class="grid">
+	<div id="container" class="container">
+		<a href="#">
+        <div class="caption">Canvases</div>
+        <img src="canvasPaintings.png" />
+    	</a>
+    </div>
+
+    <div id="container" class="container">
+		<a href="#">
+        <div class="caption">Coolers</div>
+        <img src="canvasPaintings.png" />
+    	</a>
+    </div>
+
+    <div id="container" class="container">
+		<a href="#">
+        <div class="caption">Drink Ware</div>
+        <img src="canvasPaintings.png" />
+    	</a>
+    </div>
+
+	<div id="container" class="container">
+		<a href="#">
+        <div class="caption">Picture Frames</div>
+        <img src="canvasPaintings.png" />
+    	</a>
+    </div>    
+
+    <div id="container" class="container">
+		<a href="#">
+        <div class="caption">Cork Boards</div>
+        <img src="canvasPaintings.png" />
+    	</a>
+    </div>
+
+    <div id="container" class="container">
+		<a href="#">
+        <div class="caption">Letters</div>
+        <img src="canvasPaintings.png" />
+    	</a>
+    </div>
+ </div>
 
 
 </div>
-
+</div>
 
 </body>
 </html>
